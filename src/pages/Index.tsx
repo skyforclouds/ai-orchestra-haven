@@ -36,7 +36,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              The <span className="text-highlight animate-background-shine shine-button">Operating System</span> for Your AI Infrastructure
+              The <span className="text-highlight">Operating System</span> for Your AI Infrastructure
             </motion.h1>
 
             <motion.p 
@@ -54,9 +54,9 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.9 }}
             >
               <button 
-                className="px-8 py-4 bg-highlight rounded-full font-medium text-white 
+                className="px-8 py-4 bg-[#0EA5E9] rounded-full font-medium text-white 
                           transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
-                          hover:shadow-highlight/20 active:scale-95"
+                          hover:shadow-[#0EA5E9]/20 active:scale-95"
               >
                 Request Access
               </button>
