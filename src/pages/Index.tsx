@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center px-4 py-20 relative overflow-hidden">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -63,6 +63,44 @@ const Index = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* About Us Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="mt-24 glass-card rounded-3xl p-12 md:p-16"
+        >
+          <div className="space-y-8">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.3 }}
+            >
+              About Us
+            </motion.h2>
+            
+            <motion.div 
+              className="space-y-6 text-lg text-neutral-200 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.5 }}
+            >
+              <p>
+                We're engineers who love solving hard problems in GPU orchestration. Our backgrounds span hybrid cloud architecture, GPU hardware, systems programming, and robotics - but we're always learning from each other and the wider open source community.
+              </p>
+              
+              <p>
+                Working across Singapore and India, our team brings together folks who've previously built large scale systems at companies like Meta, Nutanix, ByteDance, and Gojek. Many of us have spent time in US and European tech ecosystems, which helps us understand the challenges of running GPU workloads across different environments and scales.
+              </p>
+              
+              <p>
+                We keep things simple: write good code, build reliable systems, and have fun doing it. If you're passionate about GPU infrastructure and enjoy diving deep into technical challenges, we'd love to chat.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );
