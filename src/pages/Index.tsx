@@ -92,12 +92,23 @@ const Index = () => {
               </p>
               
               <p>
-                Working across Singapore and India, our team brings together folks who've previously built large scale systems at companies like Meta, Nutanix, ByteDance, and Gojek. Many of us have spent time in US and European tech ecosystems, which helps us understand the challenges of running GPU workloads across different environments and scales.
+                Working across Singapore and India, our team brings together folks who've previously built large scale systems at companies like Meta, Nutanix, ByteDance, and Gojek. Many of us have spent substantial time in US and European tech ecosystems, and are now united back in Asia to build global tech from home.
               </p>
               
               <p>
                 We keep things simple: write good code, build reliable systems, and have fun doing it. If you're passionate about GPU infrastructure and enjoy diving deep into technical challenges, we'd love to chat.
               </p>
+
+              <div className="flex justify-center mt-8">
+                <a 
+                  href="mailto:info@soracloud.ai"
+                  className="px-8 py-4 bg-[#0EA5E9] rounded-full font-medium text-white 
+                          transform transition-all duration-300 hover:scale-105 hover:shadow-lg 
+                          hover:shadow-[#0EA5E9]/20 active:scale-95"
+                >
+                  Contact Us
+                </a>
+              </div>
             </motion.div>
           </div>
         </motion.div>
