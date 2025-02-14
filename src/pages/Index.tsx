@@ -27,8 +27,8 @@ const Index = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="container max-w-4xl relative z-10"
       >
+        {/* Hero Section */}
         <div className="glass-card rounded-3xl p-12 md:p-16">
-          {/* Hero Content */}
           <div className="text-center space-y-8">
             <motion.h1 
               className="text-4xl md:text-6xl font-bold leading-tight"
@@ -64,11 +64,68 @@ const Index = () => {
           </div>
         </div>
 
-        {/* About Us Section */}
+        {/* Key Features Section */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
+          className="mt-24 glass-card rounded-3xl p-12 md:p-16"
+        >
+          <div className="space-y-12">
+            <motion.h2 
+              className="text-3xl md:text-4xl font-bold text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.3 }}
+            >
+              Key Features
+            </motion.h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <motion.div 
+                className="space-y-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.4 }}
+              >
+                <h3 className="text-xl font-semibold text-highlight">Serverless Inference</h3>
+                <p className="text-neutral-200 leading-relaxed">
+                  High-performance inference endpoints that automatically scale with your traffic. Deploy faster and cheaper with the latest model optimization techniques.
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="space-y-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.5 }}
+              >
+                <h3 className="text-xl font-semibold text-highlight">Ready-made Multimodal AI Apps</h3>
+                <p className="text-neutral-200 leading-relaxed">
+                  Launch compound AI applications for common use cases like document search and video content summarization out of the box. Customize with your data for turnkey enterprise AI apps hosted on your own infra.
+                </p>
+              </motion.div>
+
+              <motion.div 
+                className="space-y-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.6 }}
+              >
+                <h3 className="text-xl font-semibold text-highlight">Control Plane for Hybrid Cloud</h3>
+                <p className="text-neutral-200 leading-relaxed">
+                  Unify your AI compute across public clouds and on-prem resources. Single interface, complete visibility over system health and performance, and granular control over resource allocation.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* About Us Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.7 }}
           className="mt-24 glass-card rounded-3xl p-12 md:p-16"
         >
           <div className="space-y-8">
@@ -76,7 +133,7 @@ const Index = () => {
               className="text-3xl md:text-4xl font-bold text-center mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.3 }}
+              transition={{ duration: 0.8, delay: 1.8 }}
             >
               About Us
             </motion.h2>
@@ -85,7 +142,7 @@ const Index = () => {
               className="space-y-6 text-lg text-neutral-200 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.5 }}
+              transition={{ duration: 0.8, delay: 1.9 }}
             >
               <p>
                 We're engineers who love solving hard problems in GPU orchestration. Our backgrounds span hybrid cloud architecture, GPU hardware, systems programming, and robotics - but we're always learning from each other and the wider open source community.
